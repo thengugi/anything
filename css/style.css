@@ -1,0 +1,277 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(http://fonts.gstatic.com/s/ptsans/v8/ATKpv8nLYAKUYexo8iqqrg.woff2) format('woff2'), url(http://fonts.gstatic.com/s/ptsans/v8/LKf8nhXsWg5ybwEGXk8UBQ.woff) format('woff');
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'PT Sans', Sans-serif;
+	color: #fff;
+	background: #fff;
+	background: linear-gradient(
+		rgba(,0,0,0,0.1),
+		rgba(0,0,0,0.1));
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+/*heading tags*/
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+/*paragraphs*/
+
+p {
+	margin: 0 0 25px;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+/*media queries for larger screens*/
+@media(min-width: 767px){
+	p {
+		margin: 0 0 35px;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+}
+
+/*anchor tags*/
+a:hover,
+a:focus {
+	text-decoration: none;
+	color: #11505d;
+}
+
+/*navbar styling*/
+
+.navbar-custom {
+	top: 0px;
+	border-bottom: 1px solid rgba(255,255,255,.3);
+	text-transform: uppercase;
+	background-color: #000;
+}
+
+.navbar-custom .navbar-brand {
+	font-weight: 700;
+} 
+
+.navbar-custom .navbar-brand:focus {
+	outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+	padding: 4px 6px;
+	font-size: 16px;
+	color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+	outline: 0;
+}
+
+.navbar-custom a{
+	color: #fff;
+}
+
+.navbar-custom .nav li:active {
+	outline: none;
+	background-color: rgba(255,255,255,.3);
+}
+
+.navbar-custom .nav li a {
+	-webkit-transition: background .3s ease-in-out;
+		-moz-transition: background .3s ease-in-out;
+			transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+	outline: 0;
+	background-color: rgba(255,255,255,.3);
+}
+
+
+@media(min-width: 767px) {
+	.navbar{
+		padding: 0 20px;
+		border-bottom: 0;
+		letter-spacing: 1;
+		background: 0 0;
+		-webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+			-moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+				transition: background .5s ease-in-out, padding .5s ease-in-out;
+	}
+	.top-nav-collapse {
+		padding: 0;
+		background-color: #000;
+	}
+
+	.navbar-custom .top-nav-collapse {
+		border-bottom: 1px solid rgba(255,255,255,.3);
+	}
+
+}
+ /*navigation bar ends here*/
+
+
+/*the landing page*/
+/*intro*/
+
+.intro {
+	width: 100%;
+	height: auto;
+	display: table;
+	text-align: center;
+	padding: 100px 0;
+	color: #fff;
+	background: linear-gradient(
+		rgba(0,0,0,0.2),
+		rgba(0,0,0,0.2)
+		), url('../images/bg/officebg.jpg') no-repeat bottom center scroll;
+	-webkit-background-size: cover;
+		-moz-background-size: cover;
+			-ms-background-size: cover;
+				-o-background-size:cover;
+					background-size: cover;
+}
+
+
+/*h1 heading*/
+h1.brand-heading {
+	font-family: 'PT Sans-Regular', Helvetica, sans-serif;
+	font-size: 30px;
+	color: #222;
+	margin-top: 100px;
+	font-weight: normal;
+	background-color: #fff;
+}
+
+.intro .intro-body {
+	display: table-cell;
+}
+
+.intro .intro-body .brand-heading {
+	font-size: 35px;
+}
+
+
+@media(min-width: 767px){
+	.intro {
+		height: 100%;
+		padding: 0;
+	}
+
+	.intro .intro-body .brand-heading {
+		font-size: 35px;
+		margin-top: 20%;
+	    font-family: 'PT Sans', sans-serif;
+	}
+}
+
+
+/*fill in your details form*/
+.centered-form{
+	margin-top: 400px;
+	padding: 15px;
+	margin:0px auto;
+	vertical-align: middle;
+}
+
+.centered-form .panel{
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+
+/*office images are styled here*/
+
+.location {
+	font-size: 30px;
+}
+
+/*positioning the dynamic tile*/
+.dynamicTile {
+	margin-top: 20px;
+}
+
+.dynamicTile .col-sm-2.col-xs-4{
+    padding:5px;
+}
+
+.dynamicTile .col-sm-4.col-xs-8{
+    padding:5px;
+}
+
+#tile1{
+    background: rgb(0,172,238);
+}
+
+#tile2{
+    background: rgb(243,243,243);
+}
+
+#tile3{
+    background: rgb(71,193,228);
+}
+
+#tile4{
+    background-image: url('http://handsontek.net/demoimages/tiles/facebook.png');
+    background-size: cover;
+}
+
+#tile5{
+    background: rgb(175,26,63);
+}
+
+#tile6{
+    background: rgb(62,157,215);
+}
+
+#tile7{
+    background: white;
+}
+
+#tile8{
+    background: rgb(209,70,37);
+}
+
+#tile9{
+    background: rgb(0,142,0);
+}
+
+#tile10{
+    background: rgb(0,93,233);
+}
+
+.tilecaption{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%); 
+    margin:0!important;
+    text-align: center;
+    color:white;
+    font-family: Segoe UI;
+    font-weight: lighter;
+}
